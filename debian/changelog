@@ -1,0 +1,51 @@
+ruby-cookiejar (0.3.3-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Cédric Boutillier ]
+  * Use https:// in Vcs-* fields
+  * Bump Standards-Version to 3.9.7 (no changes needed)
+
+  [ Christian Hofstaedtler ]
+  * New upstream version, drop upstream applied patches.
+
+ -- Christian Hofstaedtler <zeha@debian.org>  Thu, 05 May 2016 22:57:05 +0000
+
+ruby-cookiejar (0.3.2-2) unstable; urgency=medium
+
+  * Team upload.
+  [ Nitesh A Jain ]
+  * Imported Upstream version 0.3.2
+
+  [ Jonas Genannt ]
+  * Refresh debian/ with dh-make-ruby
+  * Added upstream patch for RSpec 3 (Closes: #795781)
+  * added new b-depends: ruby-rspec-collection-matchers
+
+ -- Jonas Genannt <genannt@debian.org>  Fri, 28 Aug 2015 20:04:15 +0200
+
+ruby-cookiejar (0.3.1-1) unstable; urgency=low
+
+  * Team upload.
+  * Imported Upstream version 0.3.1 (Closes: #711373)
+  * d/docs: added README.markdown
+  * d/control:
+    - bumped standards version to 3.9.5 (no changes needed)
+    - updated homepage url
+  * removed patch fix-test-failures, included by upstream
+  * removed patch remove-rubygems, no longer needed
+  * d/copyright: updated to new upstream version (switched to 2-BSD)
+  * d/ruby-tests.rake: upstream changed directory and names of tests
+
+ -- Jonas Genannt <jonas.genannt@capi2name.de>  Mon, 17 Feb 2014 21:03:05 +0100
+
+ruby-cookiejar (0.3.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #711373)
+
+  [ Cédric Boutillier ]
+  * use :create_additions to force creation of object from JSON with ruby-json
+    post CVE-2013-0269
+    - debian/patches/fix-test-failures.patch
+
+ -- Praveen Arimbrathodiyil <praveen@debian.org>  Tue, 04 Jun 2013 14:17:11 +0530

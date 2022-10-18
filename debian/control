@@ -1,0 +1,29 @@
+Source: ruby-cookiejar
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Praveen Arimbrathodiyil <praveen@debian.org>
+Build-Depends: debhelper (>= 9~),
+               gem2deb,
+               rake,
+               ruby-rspec,
+               ruby-rspec-collection-matchers
+Standards-Version: 3.9.7
+Vcs-Git: https://anonscm.debian.org/git/pkg-ruby-extras/ruby-cookiejar.git
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-ruby-extras/ruby-cookiejar.git
+Homepage: https://github.com/dwaite/cookiejar
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+
+Package: ruby-cookiejar
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ruby | ruby-interpreter,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: client-side HTTP cookie library
+ The Ruby CookieJar is a library to help manage client-side cookies in pure
+ Ruby. It enables parsing and setting of cookie headers, alternating between
+ multiple 'jars' of cookies at one time (such as having a set of cookies for
+ each browser or thread), and supports persistence of the cookies in a JSON
+ string.
